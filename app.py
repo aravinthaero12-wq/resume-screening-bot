@@ -41,7 +41,7 @@ def parse_jd(jd_text):
     """
 
     response = client.chat.completions.create(
-        model="gpt-5.3",
+        model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}]
     )
     return response.choices[0].message.content
@@ -64,7 +64,7 @@ def parse_resume(resume_text):
     """
 
     response = client.chat.completions.create(
-        model="gpt-5.3",
+        model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}]
     )
     return response.choices[0].message.content
@@ -92,7 +92,7 @@ def evaluate_candidate(jd, resume):
     """
 
     response = client.chat.completions.create(
-        model="gpt-5.3",
+        model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}]
     )
     return response.choices[0].message.content
